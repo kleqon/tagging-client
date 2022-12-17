@@ -1,17 +1,56 @@
-<!-- <mat-sidenav-container class="home-page-ttb">
+<mat-sidenav-container class="home-page-ttb">
     <mat-toolbar color="primary">
         <span class="toolbar-title" role="heading">
             Tabako
         </span>
     </mat-toolbar>
-    <div class="main-body">
-        <mat-grid-list cols="12">
-            <mat-grid-tile colspan="12" rowspan="4">
-                <button class="start-button"mat-raised-button>
-                    start </button>
-            </mat-grid-tile>
-        </mat-grid-list>
-    </div>
 
-</mat-sidenav-container> -->
-<app-player></app-player>
+    <div class="main-body">
+        <mat-grid-list cols="12" rowHeight="30">
+            <mat-grid-tile colspan="8" rowspan="15">
+                <mat-form-field class="example-full-width" >
+                    <mat-label>חלונית תמלול</mat-label>
+                    <input  matInput placeholder="Ex. It makes me feel...">
+                  </mat-form-field>
+
+            </mat-grid-tile>
+            <mat-grid-tile class="buttons-tile" colspan="4" rowspan="15">
+                <div class="button-vertical-group">
+                    <!-- <button class="check-button" mat-fab>
+                        <mat-icon class="submit-icon">check</mat-icon>
+                    </button> -->
+                    <button class="med-icon-button"  mat-fab (click)="OnClickCheck()">
+                        <mat-icon >check</mat-icon>
+                    </button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button class="med-icon-button" mat-fab (click)="OnClickRecycle()">
+                        <mat-icon >redo</mat-icon>
+                    </button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button class="med-icon-button" mat-fab (click)="OnClickBlackList()">
+                        <mat-icon >remove_circle_outline</mat-icon>
+                    </button>
+                    
+                </div>
+            </mat-grid-tile>
+
+            <!-- <mat-grid-tile colspan="12" rowspan="7">
+                
+                <mat-card  class = "app-player">
+                    <app-player></app-player>
+                </mat-card>
+            </mat-grid-tile> -->
+            <!-- <mat-grid-tile colspan="4" rowspan="2">
+                <button class="start-button" mat-fab>
+                    <mat-icon class="submit-icon">check</mat-icon>
+                </button>
+            </mat-grid-tile> -->
+        </mat-grid-list>
+
+            <div class="footer" style="padding-top: 15%;">
+                <app-player></app-player>
+          </div>
+
+    </div>
+</mat-sidenav-container>
+<!-- <app-player></app-player> -->

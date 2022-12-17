@@ -10,8 +10,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PlayerComponent } from './pages/player/player.component';
-import {MatSliderModule} from '@angular/material/slider'
-import {MatListModule} from '@angular/material/list'
+import {MatSliderModule} from '@angular/material/slider';
+import {MatListModule} from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { LayoutModule } from '@angular/cdk/layout';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +36,13 @@ import {MatListModule} from '@angular/material/list'
     MatToolbarModule,
     MatGridListModule,
     MatSliderModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatMenuModule,
+    LayoutModule,
+    MatInputModule,
+    MatFormFieldModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

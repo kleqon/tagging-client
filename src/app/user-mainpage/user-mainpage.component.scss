@@ -1,3 +1,4 @@
+
 .main-body{
     height: 100%;
     background-color: inherit ;
@@ -10,13 +11,69 @@
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
-.start-button{
-    margin-top: 10vw;
+.check-button{
+
     font-size: 50px;
-    line-height: 60px;
-    height: auto;
-    width: auto;}
+    // line-height: 60px;
+    background-color: #e9edc9;
+    // height: auto;
+    // width: auto;
+    margin: auto;
+    border: 3px solid #ccd5ae;
+     height:100px !important;
+    width:48px !important;
+    font-size:48px !important;
+    ;
+}
+
+.submit-icon{
+    align-self: center;
+    top: 100px;
+}
 
 
 
+  
+  .example-full-width {
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 40%;
+    margin-top: 10%;
+  }
+  .button-vertical-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
+  .med-icon-button {
+    width: 80px !important;
+    height: 80px !important;
+    line-height: 24px !important;
+ 
+    .mat-icon {
+       width: 80px !important;
+       height: 80px !important;
+       line-height: 80px !important;
+    }
+    .material-icons {
+       font-size: 40px !important;
+    }
+    .app-player{
+      position: absolute;
+      bottom: 0;
+
+      background-color: red;
+      flex:  content
+    }
+
+    
+    .footer {
+      position: fixed;
+      bottom: 0;
+      background-color: darkred;
+      height: 100%;
+      width: 50px;
+    }
+ }
